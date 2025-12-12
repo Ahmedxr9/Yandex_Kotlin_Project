@@ -1,0 +1,88 @@
+<resources>
+    <string name="app_name">TodoList</string>
+
+    <!--RegistrationScreen-->
+    <string name="sign_in_with_yandex_id">Войти с Яндекс ID</string>
+    <string name="sign_in_with_google">Войти с Google</string>
+
+    <!--TodosScreen-->
+    <string name="title">Мои дела</string>
+    <string name="complete">Выполнено — %d</string>
+    <string name="show">Показать</string>
+    <string name="hide">Скрыть</string>
+    <string name="new_todo">Новое</string>
+
+    <!--EditScreen-->
+    <string name="cancel">Отменить</string>
+    <string name="todo">Дело</string>
+    <string name="save">Сохранить</string>
+    <string name="what_todo">Что надо сделать?</string>
+    <string name="priority">Важность</string>
+    <string name="deadline">Сделать до</string>
+    <string name="no">нет</string>
+    <string name="color">Цвет</string>
+    <string name="delete">Удалить</string>
+    <string name="brightness">Яркость</string>
+
+    <!--SettingsScreen-->
+    <string name="settings">Настройки</string>
+    <string name="theme">Тема</string>
+    <string name="auto">авто</string>
+    <string name="solarized_light">Solarized Light</string>
+    <string name="about_app">О приложении</string>
+    <string name="profile">Профиль</string>
+    <string name="logout">Выйти</string>
+    <string name="user_email">Email: %s</string>
+    <string name="user_name">Имя: %s</string>
+    <string name="logged_in_as">Вы вошли как</string>
+
+    <!--Icons strings-->
+    <string name="calendar_icon">Иконка календаря</string>
+    <string name="priority_icon">Иконка приоритета</string>
+    <string name="arrow_icon">Иконка стрелочки</string>
+    <string name="complete_icon">Иконка выполнения</string>
+    <string name="add_icon">Иконка добавления</string>
+    <string name="delete_icon">Иконка удаления</string>
+    <string name="yandex_icon">Иконка Яндекса</string>
+    <string name="icon_btn">Кнопка с иконкой</string>
+
+    <!--Animations strings-->
+    <string name="color_animation">Анимация цвета</string>
+
+    <!--Snackbar Messages-->
+    <string name="error">Произошла ошибка</string>
+    <string name="ok">Ок</string>
+    <string name="repeat">Повторить</string>
+    <string name="network_unavailable">Подключение к интернету отсутствует</string>
+    <string name="sync_error">Не удалось синхронизироваться с сервером</string>
+    <string name="success_sync">Успешно синхронизированно</string>
+    <string name="todo_deleted">Дело удалено</string>
+
+    <!--Reminder, Schedule, Calendar-->
+    <string name="reminder">Напоминание</string>
+    <string name="schedule">Расписание</string>
+    <string name="calendar">Календарь</string>
+    <string name="reminder_title">Заголовок</string>
+    <string name="description">Описание</string>
+    <string name="select_time">Выбрать время</string>
+    <string name="attach_to_task">Привязать к задаче</string>
+    <string name="save_reminder">Сохранить напоминание</string>
+    <string name="no_scheduled_items">Нет запланированных элементов</string>
+    <string name="all_tasks">Все</string>
+
+    <!--AboutAppScreen-->
+    <string name="about_the_application">About the application</string>
+    <string name="author_name">Ahmed Ahmed</string>
+    <string name="author_label">Author</string>
+    <string name="app_description">TodoList helps you stay organized and productive by managing your tasks easily and efficiently.</string>
+    <string name="social_links">Social Links</string>
+    <string name="version_label">Version: %s</string>
+    <string name="back_button">Back</string>
+    <string name="author_image">Author</string>
+    
+    <!--Social Links URLs-->
+    <string name="github_url">https://github.com/Ahmedxr9</string>
+    <string name="twitter_url">https://x.com/ahmedlxo</string>
+    <string name="telegram_url">https://t.me/Hypex53</string>
+    <string name="author_image_url">https://drive.google.com/uc?export=view&amp;id=1E2RexFenJ682fVE_Np_7hr0tXa5aaMzX</string>
+</resources>
