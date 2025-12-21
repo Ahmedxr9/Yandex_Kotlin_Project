@@ -3,6 +3,8 @@ package com.around_team.todolist.data.db
 import androidx.room.Transaction
 import com.around_team.todolist.ui.common.models.TodoItem
 import javax.inject.Inject
+import kotlinx.coroutines.flow.Flow
+import kotlinx.coroutines.flow.map
 
 /**
  * Repository class for managing Todo items in the database.
@@ -29,6 +31,25 @@ class DatabaseRepository @Inject constructor(
         return dao
             .getAllTodos()
             .map { it.toTodoItem() }
+    }
+
+    /**
+     * Observes all todo items as a Flow that emits whenever the underlying table changes.
+     */
+    fun observeAllTodos(): Flow<List<TodoItem>> {
+        return dao
+            .observeAllTodos()
+            .map { list -> list.map { it.toTodoItem() } }
+    }
+
+    /**
+     * Retrieves a single todo item from the database by its ID.
+     *
+     * @param todoId The unique identifier of the todo item.
+     * @return The matching todo item, or null if not found.
+     */
+    suspend fun getTodoById(todoId: String): TodoItem? {
+        return dao.getTodoById(todoId)?.toTodoItem()
     }
 
     /**

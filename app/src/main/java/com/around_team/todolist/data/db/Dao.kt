@@ -5,6 +5,7 @@ import androidx.room.Insert
 import androidx.room.OnConflictStrategy
 import androidx.room.Query
 import com.around_team.todolist.data.db.entities.TodoItemEntity
+import kotlinx.coroutines.flow.Flow
 
 /**
  * Data Access Object (DAO) for accessing the Todo items in the local database.
@@ -35,6 +36,22 @@ interface Dao {
      */
     @Query("SELECT * FROM todo_list")
     suspend fun getAllTodos(): List<TodoItemEntity>
+
+    /**
+     * Observes all todo items from the database as a cold Flow.
+     * This is useful for UI layers that need to react to changes.
+     */
+    @Query("SELECT * FROM todo_list")
+    fun observeAllTodos(): Flow<List<TodoItemEntity>>
+
+    /**
+     * Retrieves a single todo item by its ID.
+     *
+     * @param todoId The unique identifier of the todo item.
+     * @return The matching todo item entity, or null if not found.
+     */
+    @Query("SELECT * FROM todo_list WHERE id = :todoId LIMIT 1")
+    suspend fun getTodoById(todoId: String): TodoItemEntity?
 
     /**
      * Deletes a todo item from the database by its ID.
